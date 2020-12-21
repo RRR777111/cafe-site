@@ -1,0 +1,36 @@
+@mixin sec($bottom) {
+  margin: 0 auto $bottom;
+  width: 1280px;
+}
+
+@mixin sectionFlexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin ttl($fontSize) {
+  margin-bottom: 20px;
+  font-size: $fontSize;
+  letter-spacing: 0.2em;
+  color: $font;
+}
+
+@mixin txt($width) {
+  width: $width;
+  letter-spacing: 0.2em;
+  line-height: 1.6;
+  color: $font;
+}
+
+@mixin bg($imgName) {
+  background: url($push + $imgName) center center / cover;
+}
+
+
+@mixin btn($width) {
+  width: $width;
+  text-align: center;
+  background: $font;
+}

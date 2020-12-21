@@ -1,0 +1,173 @@
+.header {
+  &__logo {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    display: block;
+  }
+}
+
+.gnav {
+  &__nav {
+    @include sectionFlexbox;
+  }
+
+  &__link {
+    padding: 32px 0;
+    text-decoration: none;
+    color: $font;
+    display: block;
+  }
+}
+
+.concept {
+  &__box {
+    @include sectionFlexbox;
+  }
+
+  &__ttl {
+    @include ttl(32px);
+    margin-bottom: 64px;
+    text-align: center;
+  }
+
+  &__txt {
+    @include txt(100%);
+    margin-bottom: 48px;
+    padding: 0 32px;
+    line-height: 2.5;
+  }
+
+  &__img {
+    @include bg("res.png");
+    padding: 25%;
+  }
+
+  &__btn1 {
+    @include btn(50%);
+    margin: 0 auto;
+  }
+
+  &__link {
+    @extend %btnLink;
+  }
+
+  &__con {
+    margin-bottom: 132px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__sb-ttl {
+    @include ttl(22px);
+    text-align: center;
+  }
+
+  &__sb-txt {
+    @include txt(40%);
+    line-height: 2;
+  }
+
+  &__btn2 {
+    @include btn(30%);
+  }
+}
+
+.menu {
+  &__box {
+    @include sectionFlexbox;
+    justify-content: space-between;
+    margin: 0 32px;
+    width: 90%;
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__ttl {
+    @include ttl(22px);
+  }
+
+  &__txt {
+    @include txt(100%);
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    @include btn(90%);
+  }
+
+  &__link {
+    @extend %btnLink;
+  }
+}
+
+.about {
+  &__ttl {
+    @include ttl(32px);
+    padding-left: 15%;
+  }
+
+  &__txt {
+    @include txt(45%);
+    line-height: 2;
+    text-align: center;
+  }
+}
+
+.reservation {
+  &__box {
+    @include sectionFlexbox;
+  }
+
+  &__ttl {
+    @include ttl(32px);
+    margin-bottom: 64px;
+  }
+
+  &__txt1 {
+    @include txt(100%);
+    padding-left: 10%;
+    line-height: 2.5;
+  }
+
+  &__txt2{
+    @include txt(100%);
+    padding: 100px 0 0 10%;
+    line-height: 2.5;
+    text-align: center;
+  }
+
+  &__img {
+    @include bg("about.png");
+    padding: 25%;
+  }
+}
+
+.footer{
+  &__logo {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    display: block;
+  }
+  &__box{
+    margin: 0 auto;
+    padding: 32px 64px 0 0;
+    width: 980px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  &__txt{
+    padding-bottom: 32px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    line-height: 2;
+  }
+}

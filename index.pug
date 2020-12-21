@@ -1,0 +1,140 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width")
+    title カフェリニューアルサイト
+    link(href="css/style.css" rel="stylesheet")
+
+  body
+    .wrapper
+      header.header#header
+        h1.header__ttl 
+          a.header__link(href="#")
+            img.header__logo(src="img/logo.svg")
+
+        nav.gnav#gnav
+          ul.gnav__nav
+            - 
+              let list = [
+                {
+                txt: 'Concept',　
+                href:'#concept'
+                },
+
+                {
+                  txt: 'Menu',　
+                  href: '#menu'
+                  },
+                {
+                  txt: 'About', 
+                  href: '#about'
+                  },
+                {
+                  txt: 'Reservation',
+                  href: '#reservation'
+                }
+              ]
+
+            each item in list
+              li.gnav__list
+                a(href=item.href).gnav__link  #{item.txt}
+
+      main.main#main
+        .mv#mv
+        section.concept.elm#concept
+          .concept__con
+            .concept__unit
+              h2.concept__ttl Concept
+              p.concept__txt Tempor et quis et culpa commodo amet nulla elit minim laborum nostrud. Qui pariatur consequat pariatur irure magna aliqua irure minim non qui elit sit non. Irure sit veniam enim sit velit nisi exercitation. 
+              p.concept__btn1 
+                a(href="#").concept__link Reed more
+            .concept__img
+
+          .concept__con
+            h3.concept__sb-ttl NEWS
+            p.concept__sb-txt 1.1(Mon)
+              br
+              |Aute irure nulla occaecat do aliqua exercitation cillum sint ullamco.
+            p.concept__btn2 
+              a(href="#").concept__link Reed more
+
+        section.menu.elm#menu
+          .menu__box
+            p.menu__pic
+              img(src="img/menu1.png").menu__img
+            h2.menu__ttl Lunch
+            p.menu__txt Excepteur ullamco dolore sint eu exercitation et officia ad.
+            p.menu__btn 
+              a(href="#").menu__link Reed more
+
+          .menu__box
+            p.menu__pic
+              img(src="img/menu2.png").menu__img
+            h2.menu__ttl Dinner
+            p.menu__txt Dinner Nulla sunt nulla labore irure nulla est incididunt sint.
+            p.menu__btn 
+              a(href="#").menu__link Reed more
+
+          .menu__box
+            p.menu__pic
+              img(src="img/menu3.png").menu__img
+            h2.menu__ttl Party
+            p.menu__txt Reprehenderit sit culpa aute sint aliqua nisi consectetur ex minim pariatur id.
+            p.menu__btn 
+              a(href="#").menu__link Reed more
+
+        section.about.elm#about
+          h1.about__ttl About
+          p.about__txt CAFE
+            br
+            |〒000-0000 Occaecat sint ullamco exercitation esse in enim ullamco.
+            br
+            |TEL：0000-00-0000
+            br
+            |0:00～0:00（last 00:00）
+            br
+            |Minim nostrud elit cillum non anim aliqua consectetur ipsum.
+
+        section.reservation.elm#reservation
+          .reservation__box
+            h1.reservation__ttl Reservation
+            p.reservation__txt1 Ut eiusmod sit adipisicing aliqua voluptate consectetur aliquip.
+              br
+              |Cillum pariatur irure aliquip ad commodo sint elit culpa mollit proident eiusmod.
+              br
+              |Excepteur laboris culpa qui nisi eu ullamco nulla.
+              br
+              |Duis non fugiat commodo incididunt voluptate ullamco esse eiusmod.
+            p.reservation__txt2 ORDER： 0:00~0:00
+              br
+              |TEL：0000-00-0000
+          .reservation__img
+
+
+      footer.footer
+        .footer__box
+          h2.footer__ttl 
+            a.footer__link(href="#")
+              img.footer__logo(src="img/logo.svg")
+          p.footer__txt OPEN~CLOSE
+            br
+            |0:00～00:00
+            br
+            |（LASTORDER 21:00）
+
+          p.footer__txt HOLIDAY
+            br
+            |年中無休
+
+          p.footer__txt TEL
+            br
+            |0000-00-0000
+
+        p.footer__txt 〒000-0000 Dolore irure ea minim aute veniam.
+
+        p.footer__txt
+          small.footer__copy &copy;2020 Eiusmod ad do ea mollit tempor sunt ipsum duis nisi nisi.
+
+    script(src="main.js")
+  

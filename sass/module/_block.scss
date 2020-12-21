@@ -1,0 +1,61 @@
+body{
+  background:darken($color: $base, $amount: 15%);
+}
+
+.header{
+  padding: 64px 0 0;
+  width: 200px;
+  height: 100vh;
+  background: darken($color: $base, $amount: 15%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.gnav{
+  padding: 64px 0;
+}
+
+.mv{
+  @include bg("mv.png");
+  margin-bottom: 132px;
+  width: 100%;
+  height: 100vh;
+}
+
+.concept{
+  @include sec(132px);
+  padding: 88px 0 0 200px;
+  width: 90%;
+}
+
+.menu{
+  @include sec(132px);
+  padding: 88px 0 0 200px;
+  display: flex;
+}
+
+.txt-blank{
+  padding-bottom: 28%;
+}
+
+.about{
+  @include sec(132px);
+  @include bg("concept.png");
+  padding: 20% 164px 20% 250px;
+  width: 100%;
+}
+.reservation{
+  @include sec(132px);
+  padding: 88px 0 0 200px;
+  width: 90%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.footer{
+  padding-left: 200px;
+  background: darken($color: $base, $amount: 15%);
+  color: $font;
+}
